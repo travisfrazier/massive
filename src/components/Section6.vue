@@ -12,7 +12,6 @@
           will pay an additional monthly premium for Medigap. (at their offices
           and at hospitals), preventive care, and medical supplies.
         </p>
-        <button class="section6__content--button">Find Plans</button>
       </div>
       <div class="section6__content--right"></div>
     </div>
@@ -26,8 +25,9 @@ export default {};
 <style lang="scss" scoped>
 .section6 {
   background: $color-bg-one;
-  height: 615px;
   position: relative;
+  padding-top: 100px;
+  padding-bottom: 190px;
 }
 .section6__content {
   display: grid;
@@ -35,13 +35,17 @@ export default {};
   gap: 85px;
   align-items: center;
   height: 100%;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .section6__content--title {
-  color: $color-light;
+  color: $color-neutral;
   font-weight: 700;
   font-size: $font-xl;
   margin-bottom: 40px;
+  margin-top: 0px;
 }
 .section6__content--image {
   object-fit: cover;
@@ -51,31 +55,23 @@ export default {};
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: right 10%;
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: center;
   left: 50%;
+  bottom: 0;
   position: absolute;
   width: 50vw;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 .section6__content--text {
-  color: $color-font-one;
+  color: $color-neutral;
   font-size: $font-m;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   margin-top: 0px;
   line-height: 1.5;
-}
-.section6__content--button {
-  background: $color-action;
-  text-transform: uppercase;
-  font-size: $font-btn;
-  color: $color-neutral;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 34px;
-  font-weight: 700;
-  cursor: pointer;
 }
 </style>

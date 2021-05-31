@@ -23,6 +23,9 @@ export default {};
 .section2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 .section2__box {
   text-align: center;
@@ -31,6 +34,13 @@ export default {};
   border-right: 2px solid $color-neutral;
   &:last-of-type {
     border-right: none;
+  }
+   @media only screen and (max-width: 768px) {
+    border-right: none;
+    border-bottom: 2px solid $color-neutral;
+    &:last-of-type {
+      border-bottom: none;
+    }
   }
 }
 .section2__title {

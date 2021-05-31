@@ -19,7 +19,7 @@ export default {};
 
 <style lang="scss" scoped>
 .section1 {
-  height: 390px;
+  padding: 100px 0px;
   background: url('../assets/bg-1.jpg');
   background-size: cover;
   background-position: center;
@@ -38,5 +38,6 @@ export default {};
   width: 65%;
   line-height: 1.5;
   color: $color-font-one;
+  margin-bottom: 0px;
 }
 </style>

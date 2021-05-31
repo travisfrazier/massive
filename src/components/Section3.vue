@@ -27,7 +27,7 @@ export default {};
 <style lang="scss" scoped>
 .section3 {
   background: $color-bg-three;
-  height: 750px;
+  padding: 80px 0px;
 }
 .section3__content {
   display: grid;
@@ -35,6 +35,12 @@ export default {};
   gap: 85px;
   align-items: center;
   height: 100%;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+.section3__content--image {
+  width: 100%;
 }
 .section3__content--title {
   color: $color-light;
