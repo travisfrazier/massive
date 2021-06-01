@@ -2,15 +2,15 @@
   <section class="section2">
     <div class="section2__box">
       <p class="section2__title">Medicare Part A</p>
-      <a class="section2__link">Learn more</a>
+      <a href="#section3" class="section2__link">Learn more</a>
     </div>
     <div class="section2__box">
       <p class="section2__title">Medicare Supplements</p>
-      <a class="section2__link">Learn more</a>
+      <a href="#section4" class="section2__link">Learn more</a>
     </div>
     <div class="section2__box">
       <p class="section2__title">Perscription Plans</p>
-      <a class="section2__link">Learn more</a>
+      <a href="#section5" class="section2__link">Learn more</a>
     </div>
   </section>
 </template>
@@ -23,7 +23,7 @@ export default {};
 .section2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     grid-template-columns: 1fr;
   }
 }
@@ -35,7 +35,7 @@ export default {};
   &:last-of-type {
     border-right: none;
   }
-   @media only screen and (max-width: 768px) {
+   @media only screen and (max-width: 900px) {
     border-right: none;
     border-bottom: 2px solid $color-neutral;
     &:last-of-type {

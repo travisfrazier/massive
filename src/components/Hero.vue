@@ -12,7 +12,7 @@
             </h3>
             <form class="hero__form">
               <label class="hero__form--label">Enter Your Zip Code</label>
-              <input class="hero__form--input" id="zip" name="zip" type="text" pattern="[0-9]*">
+              <input required class="hero__form--input" id="zip" name="zip" type="text" pattern="[0-9]*">
               <button class="hero__form--button" type="submit">Get Started</button>
             </form>
           </div>
@@ -31,8 +31,13 @@ export default {};
   height: 540px;
   background: url('../assets/hero-massive.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: left;
   position: relative;
+  @media only screen and (max-width: 900px) {
+    height: 700px;
+    display: flex;
+    align-items: center;
+  }
 }
 .hero__content--wrapper {
   display: flex;
@@ -43,12 +48,21 @@ export default {};
   position: absolute;
   bottom: -30px;
   width: 600px;
+  @media only screen and (max-width: 900px) {
+    bottom: 20px;
+    width: 100%;
+    position: static;
+    opacity: .85;
+  }
 }
 .hero__content--top {
   background: $color-light;
   padding: 44px 0px;
   text-align: center;
   border-radius: 10px 10px 0px 0px;
+  @media only screen and (max-width: 900px) {
+    padding: 30px 0px;
+  }
 }
 .hero__content--titleOne {
   color: $color-neutral;
@@ -56,6 +70,9 @@ export default {};
   font-weight: 800;
   text-transform: capitalize;
   margin: 0;
+  @media only screen and (max-width: 900px) {
+    font-size: $font-l;
+  }
 }
 .hero__content--titleTwo {
   margin: 0;
@@ -64,11 +81,17 @@ export default {};
   text-align: center;
   margin: 0 0 30px 0;
   font-weight: 400;
+  @media only screen and (max-width: 900px) {
+    font-size: $font-m;
+  }
 }
 .hero__content--bottom {
   background: $color-dark;
   border-radius: 0px 0px 10px 10px;
   padding: 24px 48px 48px 48px;
+  @media only screen and (max-width: 900px) {
+    padding: 16px 30px 30px 30px;
+  }
 }
 .hero__form {
   display: flex;
@@ -104,5 +127,8 @@ export default {};
   padding: 8px 34px;
   font-weight: 700;
   cursor: pointer;
+  @media only screen and (max-width: 900px) {
+    font-size: $font-s;
+  }
 }
 </style>

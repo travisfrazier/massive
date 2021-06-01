@@ -39,5 +39,8 @@ export default {};
   line-height: 1.5;
   color: $color-font-one;
   margin-bottom: 0px;
+   @media only screen and (max-width: 900px) {
+    width: 100%;
+  }
 }
 </style>

@@ -2,15 +2,15 @@
   <section class="section6">
     <div class="section6__content container">
       <div class="section6__content--left">
-        <h3 class="section6__content--title">Medicare Supplements</h3>
+        <h3 class="section6__content--title">
+          Talk directly to a licensed insurance agency in your area!
+        </h3>
         <p class="section6__content--text">
-          Recipients of Traditional Medicare can purchase Medicare supplements
-          (also known as Medigap) from private companies. It is Used for health
-          care costs not covered by Traditional Medicare (copayments,
-          deductibles, etc.) Supplements correspond with different levels of
-          coverage and work with with your original Part A and B benefits. You
-          will pay an additional monthly premium for Medigap. (at their offices
-          and at hospitals), preventive care, and medical supplies.
+          We're dedicated to helping you find the right Medicare Supplement
+          Insurance. If you're looking to lower your out-of-pocket expenses or
+          expand your current Medicare coverage, we have Licensed Insurance
+          Agents available to provide expert advice and guidance. Let us walk
+          you through the process!
         </p>
       </div>
       <div class="section6__content--right"></div>
@@ -28,15 +28,20 @@ export default {};
   position: relative;
   padding-top: 100px;
   padding-bottom: 190px;
+  overflow: hidden;
+  @media only screen and (max-width: 900px) {
+    padding-bottom: 100px;
+  }
 }
 .section6__content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 85px;
   align-items: center;
   height: 100%;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     grid-template-columns: 1fr;
+    gap: 60px;
   }
 }
 
@@ -47,24 +52,20 @@ export default {};
   margin-bottom: 40px;
   margin-top: 0px;
 }
-.section6__content--image {
-  object-fit: cover;
-}
 .section6__content--right {
   background: url('../assets/person-3.jpg');
-  width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: right 10%;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  left: 50%;
+  left: 60%;
   bottom: 0;
   position: absolute;
-  width: 50vw;
-  @media only screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
+  width: 40vw;
+  background-position: right center;
+  @media only screen and (max-width: 900px) {
+    position: static;
+    background-position: 75% center;
+    height: 500px;
+    width: 100%;
   }
 }
 .section6__content--text {

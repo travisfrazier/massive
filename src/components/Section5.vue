@@ -1,5 +1,5 @@
 <template>
-  <section class="section5">
+  <section id="section5" class="section5">
     <div class="section5__content container">
       <div class="section5__content--left">
         <img class="section5__content--image" src="../assets/image-3.svg" />
@@ -35,8 +35,9 @@ export default {};
   gap: 85px;
   align-items: center;
   height: 100%;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 .section5__content--image {

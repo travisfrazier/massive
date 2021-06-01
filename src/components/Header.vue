@@ -31,18 +31,40 @@ export default {};
 }
 .header__logo--img {
   width: 300px;
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+    width: 200px;
+  }
 }
 .header__content {
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 900px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 .header__contact--img {
   width: 45px;
   margin-right: 12px;
+  @media only screen and (max-width: 900px) {
+    width: 25px;
+  }
 }
 .header__contact {
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 900px) {
+    justify-self: end;
+  }
+  @media only screen and (max-width: 500px) {
+    justify-self: center;
+  }
 }
 .header__contact--num {
   display: flex;
@@ -55,12 +77,18 @@ export default {};
   font-weight: 700;
   font-size: $font-l;
   letter-spacing: 1.2px;
+  @media only screen and (max-width: 900px) {
+    font-size: $font-m;
+  }
 }
 .header__contact--text {
   text-transform: capitalize;
   color: $color-action-two;
   font-weight: 700;
   font-size: $font-s;
+   @media only screen and (max-width: 900px) {
+    font-size: $font-xs;
+  }
 }
 .header__contact--box {
   display: flex;

@@ -1,5 +1,5 @@
 <template>
-  <section class="section4">
+  <section id="section4" class="section4">
     <div class="section4__content container">
       <div class="section4__content--left">
         <h3 class="section4__content--title">Medicare Supplements</h3>
@@ -36,8 +36,9 @@ export default {};
   gap: 85px;
   align-items: center;
   height: 100%;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 .section4__content--image {
