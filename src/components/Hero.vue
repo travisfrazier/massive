@@ -71,7 +71,7 @@ export default {};
   text-transform: capitalize;
   margin: 0;
   @media only screen and (max-width: 900px) {
-    font-size: $font-l;
+    font-size: $font-m;
   }
 }
 .hero__content--titleTwo {
@@ -116,6 +116,9 @@ export default {};
   margin-bottom: 12px;
   color: $color-dark;
   font-size: $font-m;
+  @media only screen and (max-width: 900px) {
+    font-size: $font-s;
+  }
 }
 .hero__form--button {
   background: $color-action;

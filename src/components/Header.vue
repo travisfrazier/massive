@@ -29,11 +29,18 @@ export default {};
   padding-top: 16px;
   padding-bottom: 16px;
 }
+.header__logo {
+  display: flex;
+}
 .header__logo--img {
   width: 300px;
+  align-self: center;
   @media only screen and (max-width: 900px) {
     width: 100%;
     width: 200px;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 150px;
   }
 }
 .header__content {
@@ -41,12 +48,11 @@ export default {};
   justify-content: space-between;
   @media only screen and (max-width: 900px) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 24px;
   }
   @media only screen and (max-width: 500px) {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    gap: 10px;
   }
 }
 .header__contact--img {
@@ -55,6 +61,10 @@ export default {};
   @media only screen and (max-width: 900px) {
     width: 25px;
   }
+  @media only screen and (max-width: 500px) {
+    width: 20px;
+    align-self: center;
+  }
 }
 .header__contact {
   display: flex;
@@ -62,14 +72,14 @@ export default {};
   @media only screen and (max-width: 900px) {
     justify-self: end;
   }
-  @media only screen and (max-width: 500px) {
-    justify-self: center;
-  }
 }
 .header__contact--num {
   display: flex;
   flex-direction: column;
   white-space: nowrap;
+  @media only screen and (max-width: 500px) {
+    white-space: normal;
+  }
 }
 .header__contact--tel {
   text-decoration: none;
@@ -79,6 +89,9 @@ export default {};
   letter-spacing: 1.2px;
   @media only screen and (max-width: 900px) {
     font-size: $font-m;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: $font-s;
   }
 }
 .header__contact--text {
@@ -97,5 +110,8 @@ export default {};
 .header__contact--ellipse {
   width: 10px;
   margin-right: 4px;
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
 }
 </style>
